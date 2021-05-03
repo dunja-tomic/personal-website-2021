@@ -1,0 +1,32 @@
+.mainDiv {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.marginAuto {
+  margin: auto;
+}
+.imagesRow {
+  margin: auto;
+  width: 75%;
+}
+.marginLeft30 {
+  margin-left: 30px;
+}
+.titleFont {
+  font-family: Permanent Marker;
+  font-size: 64px;
+  margin-bottom: 0;
+}
+.width100 {
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.image:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(2px 2px 2px #a9a9a9);
+}

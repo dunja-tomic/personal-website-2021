@@ -1,0 +1,20 @@
+.mainDiv {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.width100 {
+  width: 100%;
+}
+.col {
+  height: inherit;
+  align-items: center;
+  display: flex;
+}
+.p48 {
+  font-family: Permanent Marker;
+  font-size: 48px;
+}
+.marginBottom20 {
+  margin-bottom: 20px;
+}
