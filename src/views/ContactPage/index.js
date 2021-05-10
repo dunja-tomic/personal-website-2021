@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Row, Col, Container, Image } from "react-bootstrap";
+import ReactGA from "react-ga";
 
 import BackButton from "../../components/BackButton";
-
 import styles from "./styles.module.css";
-
 import contact from "../../images/contact-1.png";
 
 export default class ContactPage extends Component {
   render() {
+    ReactGA.pageview(window.location.pathname + window.location.search);
     return (
       <div className={styles.mainDiv}>
         <BackButton />

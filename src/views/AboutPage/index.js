@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col, Container, Image } from "react-bootstrap";
+import ReactGA from "react-ga";
 
 import about from "../../images/about-1.png";
 import BackButton from "../../components/BackButton";
@@ -7,6 +8,7 @@ import styles from "./styles.module.css";
 
 export default class AboutPage extends Component {
   render() {
+    ReactGA.pageview(window.location.pathname + window.location.search);
     return (
       <div className={styles.mainDiv}>
         <BackButton />

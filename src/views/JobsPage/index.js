@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactGA from "react-ga";
 import { Row, Col, Container, Image } from "react-bootstrap";
 import {
   Timeline,
@@ -26,6 +27,8 @@ const customTheme = {
 
 export default class JobsPage extends Component {
   render() {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     return (
       <div className={styles.mainDiv}>
         <BackButton />

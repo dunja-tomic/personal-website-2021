@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactGA from "react-ga";
 import { Row, Col, Container, Image } from "react-bootstrap";
 
 import styles from "./styles.module.css";
@@ -7,6 +8,7 @@ import BackButton from "../../components/BackButton";
 
 export default class TheGoldenHackPage extends Component {
   render() {
+    ReactGA.pageview(window.location.pathname + window.location.search);
     return (
       <div className={styles.mainDiv}>
         <BackButton />

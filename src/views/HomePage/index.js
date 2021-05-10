@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col, Container, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import ReactGA from "react-ga";
 
 import styles from "./styles.module.css";
 import about from "../../images/about.png";
@@ -12,6 +13,8 @@ import resume from "../../assets/S21Resume.pdf";
 
 export default class HomePage extends Component {
   render() {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     return (
       <div className={styles.mainDiv}>
         <Container className={styles.marginAuto}>
